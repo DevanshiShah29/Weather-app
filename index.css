@@ -1,0 +1,100 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family : 'montserrat', sans-serif;
+}
+
+.app {
+  background-image : url('https://images.unsplash.com/photo-1531804226530-70f8004aa44e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+  background-position: bottom;
+  background-size: cover;
+  transition: 0.4s ease-out;
+}
+
+.app.warm{
+  background-image: url('https://images.unsplash.com/photo-1442405740009-7b57cca9d316?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+}
+
+main{
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.2), rgba(0,0,0,0.75));
+  padding: 25px;
+}
+
+.search-box{
+  width:100%;
+  margin: 0 0 75px;
+}
+
+.search-box .search-bar{
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 15px;
+  display: block;
+  border:none;
+  outline: none;
+  border-radius: 16px 16px 16px 16px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+
+  color: #313131;
+  font-size: 20px;
+  transition: 0.5s ease;
+  
+}
+
+.search-box .search-bar:focus{
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.location-box .location{
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.8);
+}
+
+.location-box .date{
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  font-style:italic;
+  color: #fff;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.8);
+}
+
+.weather-box{
+  text-align:center;
+}
+
+.weather-box .temp{
+  font-size: 80px;
+  color:#fff;
+  font-weight:700;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 20px;
+  text-shadow: rgba(50, 50, 70, 0.8);
+  text-align:center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+  width:400px;
+
+}
+
+@media only screen and (max-width : 767px){
+  .weather-box .temp{
+    width:auto;
+  }
+}
+
+.weather-box .weather{
+  color:#fff;
+  font-size:40px;
+  font-weight:700;
+  text-shadow:rgba(50, 50, 70, 0.8);
+}
